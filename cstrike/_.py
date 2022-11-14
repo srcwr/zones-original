@@ -111,5 +111,5 @@ for map in d:
 
 for map in freestyles:
     with open("todofreestyle/" + map + ".json", "w") as f:
-        json.dump(freestyles[map], f, sort_keys=True, indent=4)
+        json.dump(freestyles[map], f, sort_keys=True, indent='\t', separators=(',', ': '))
 
